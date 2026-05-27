@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bienvenido a mi página web personal. Descubre mis proyectos, habilidades y mucho más." />
+  <meta name="author" content="Natali Alemán" />
+  <meta property="og:title" content="Mi Página Web | Portfolio Personal" />
+  <meta property="og:description" content="Explora mis proyectos, habilidades y experiencia profesional." />
+  <meta property="og:type" content="website" />
+  <title>Mi Página Web | Portfolio Personal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-dot"></span>
+        MiSitio
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active" id="nav-inicio">Inicio</a></li>
+          <li><a href="#about" class="nav-link" id="nav-sobre-mi">Sobre mí</a></li>
+          <li><a href="#services" class="nav-link" id="nav-servicios">Servicios</a></li>
+          <li><a href="#portfolio" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-particles" id="hero-particles"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag" id="hero-tag">👋 Hola, soy</p>
+      <h1 class="hero-title" id="hero-title">
+        Tu <span class="gradient-text">Nombre</span><br />Aquí
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        Desarrollador Web · Diseñador · Creador de experiencias digitales memorables
+      </p>
+      <div class="hero-cta" id="hero-cta">
+        <a href="#portfolio" class="btn btn-primary" id="btn-ver-trabajo">Ver mi trabajo</a>
+        <a href="#contact" class="btn btn-outline" id="btn-contactar">Contáctame</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" id="hero-scroll-hint">
+      <span>Desliza hacia abajo</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sobre mí</span>
+        <h2 class="section-title" id="about-title">¿Quién soy?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual" id="about-visual">
+          <div class="about-card-glow"></div>
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <span class="avatar-emoji">🧑‍💻</span>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item" id="stat-proyectos">
+              <span class="stat-number" data-target="20">0</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat-item" id="stat-experiencia">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-label">Años exp.</span>
+            </div>
+            <div class="stat-item" id="stat-clientes">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-label">Clientes</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text" id="about-text">
+          <p>
+            Soy un apasionado del desarrollo web con experiencia en crear soluciones digitales
+            modernas y funcionales. Me especializo en crear interfaces atractivas y experiencias
+            de usuario excepcionales.
+          </p>
+          <p>
+            Mi objetivo es combinar diseño y tecnología para construir productos que no solo
+            funcionen perfectamente, sino que también deleiten a quienes los usan.
+          </p>
+          <div class="skills-grid" id="skills-grid">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Git</span>
+          </div>
+          <a href="#contact" class="btn btn-primary" id="btn-about-contactar">Trabajemos juntos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Servicios</span>
+        <h2 class="section-title" id="services-title">¿Qué ofrezco?</h2>
+      </div>
+      <div class="services-grid" id="services-grid">
+        <article class="service-card" id="service-web">
+          <div class="service-icon">🌐</div>
+          <h3 class="service-title">Desarrollo Web</h3>
+          <p class="service-desc">
+            Sitios web modernos, rápidos y responsivos adaptados a tus necesidades específicas.
+          </p>
+        </article>
+        <article class="service-card featured" id="service-design">
+          <div class="service-badge">Popular</div>
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">Diseño UI/UX</h3>
+          <p class="service-desc">
+            Interfaces intuitivas y atractivas que mejoran la experiencia del usuario final.
+          </p>
+        </article>
+        <article class="service-card" id="service-seo">
+          <div class="service-icon">📈</div>
+          <h3 class="service-title">Optimización SEO</h3>
+          <p class="service-desc">
+            Mejora tu visibilidad en buscadores y atrae más tráfico orgánico a tu sitio.
+          </p>
+        </article>
+        <article class="service-card" id="service-mobile">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">Diseño Responsivo</h3>
+          <p class="service-desc">
+            Tu sitio se verá perfecto en cualquier dispositivo, desde móvil hasta escritorio.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title" id="portfolio-title">Mis Proyectos</h2>
+      </div>
+      <div class="portfolio-filters" id="portfolio-filters">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
+        <button class="filter-btn" data-filter="design" id="filter-design">Diseño</button>
+        <button class="filter-btn" data-filter="app" id="filter-app">Apps</button>
+      </div>
+      <div class="portfolio-grid" id="portfolio-grid">
+        <article class="portfolio-card" data-category="web" id="project-1">
+          <div class="portfolio-img">
+            <span class="portfolio-emoji">🛒</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Web</span>
+            <h3>Tienda en Línea</h3>
+            <p>E-commerce moderno con carrito de compras y pasarela de pago integrada.</p>
+            <a href="#" class="portfolio-link" id="link-project-1">Ver proyecto →</a>
+          </div>
+        </article>
+        <article class="portfolio-card" data-category="design" id="project-2">
+          <div class="portfolio-img">
+            <span class="portfolio-emoji">📊</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Diseño</span>
+            <h3>Dashboard Analytics</h3>
+            <p>Panel de control con visualización de datos en tiempo real y gráficas interactivas.</p>
+            <a href="#" class="portfolio-link" id="link-project-2">Ver proyecto →</a>
+          </div>
+        </article>
+        <article class="portfolio-card" data-category="app" id="project-3">
+          <div class="portfolio-img">
+            <span class="portfolio-emoji">📱</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">App</span>
+            <h3>App de Productividad</h3>
+            <p>Aplicación móvil para gestión de tareas con sincronización en la nube.</p>
+            <a href="#" class="portfolio-link" id="link-project-3">Ver proyecto →</a>
+          </div>
+        </article>
+        <article class="portfolio-card" data-category="web" id="project-4">
+          <div class="portfolio-img">
+            <span class="portfolio-emoji">🏨</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Web</span>
+            <h3>Sitio de Reservaciones</h3>
+            <p>Plataforma de reservas para hoteles con calendario y gestión de disponibilidad.</p>
+            <a href="#" class="portfolio-link" id="link-project-4">Ver proyecto →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title" id="contact-title">Hablemos</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" id="contact-info">
+          <p class="contact-desc">
+            ¿Tienes un proyecto en mente? Me encantaría escucharte. Envíame un mensaje
+            y te responderé lo antes posible.
+          </p>
+          <div class="contact-items">
+            <div class="contact-item" id="contact-email-item">
+              <div class="contact-item-icon">📧</div>
+              <div>
+                <p class="contact-item-label">Email</p>
+                <a href="mailto:tu@email.com" class="contact-item-value" id="contact-email">tu@email.com</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-phone-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <p class="contact-item-label">Teléfono</p>
+                <a href="tel:+1234567890" class="contact-item-value" id="contact-phone">+123 456 7890</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-location-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <p class="contact-item-label">Ubicación</p>
+                <p class="contact-item-value" id="contact-location">Tu Ciudad, País</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group" id="form-group-name">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="form-group" id="form-group-email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group" id="form-group-subject">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="¿En qué puedo ayudarte?" required />
+          </div>
+          <div class="form-group" id="form-group-message">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btn-send">
+            <span>Enviar mensaje</span>
+            <span class="btn-icon">🚀</span>
+          </button>
+          <p class="form-success hidden" id="form-success">
+            ✅ ¡Mensaje enviado! Te contactaré pronto.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="nav-logo footer-logo" id="footer-logo">
+          <span class="logo-dot"></span>
+          MiSitio
+        </a>
+        <div class="footer-social" id="footer-social">
+          <a href="#" class="social-link" id="social-github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footer-copy">&copy; <span id="year"></span> MiSitio. Todos los derechos reservados.</p>
+        <p class="footer-made" id="footer-made">Hecho con ❤️ y mucho ☕</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver al inicio">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
