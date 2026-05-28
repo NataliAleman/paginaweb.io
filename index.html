@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bienvenido a mi página web personal. Descubre mis proyectos, habilidades y mucho más." />
-  <meta name="author" content="Natali Alemán" />
-  <meta property="og:title" content="Mi Página Web | Portfolio Personal" />
-  <meta property="og:description" content="Explora mis proyectos, habilidades y experiencia profesional." />
+  <meta name="description" content="Portafolio profesional de Natali Joselin Alemán Perez — Ingeniera en Software especializada en QA, desarrollo web y soporte de sistemas." />
+  <meta name="author" content="Natali Joselin Alemán Perez" />
+  <meta property="og:title" content="Natali Alemán | Ingeniera en Software" />
+  <meta property="og:description" content="Portafolio profesional de Natali Joselin Alemán Perez — Ingeniera en Software especializada en QA, desarrollo web y soporte de sistemas." />
   <meta property="og:type" content="website" />
-  <title>Mi Página Web | Portfolio Personal</title>
+  <title>Natali Alemán | Ingeniera en Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,15 +21,17 @@
     <div class="nav-container">
       <a href="#hero" class="nav-logo" id="nav-logo">
         <span class="logo-dot"></span>
-        MiSitio
+        NA.dev
       </a>
       <nav aria-label="Navegación principal">
         <ul class="nav-links" id="nav-links">
-          <li><a href="#hero" class="nav-link active" id="nav-inicio">Inicio</a></li>
-          <li><a href="#about" class="nav-link" id="nav-sobre-mi">Sobre mí</a></li>
-          <li><a href="#services" class="nav-link" id="nav-servicios">Servicios</a></li>
-          <li><a href="#portfolio" class="nav-link" id="nav-portfolio">Portfolio</a></li>
-          <li><a href="#contact" class="nav-link" id="nav-contacto">Contacto</a></li>
+          <li><a href="#hero"       class="nav-link active" id="nav-inicio">Inicio</a></li>
+          <li><a href="#about"      class="nav-link" id="nav-sobre-mi">Sobre mí</a></li>
+          <li><a href="#services"   class="nav-link" id="nav-servicios">Servicios</a></li>
+          <li><a href="#experience" class="nav-link" id="nav-experiencia">Experiencia</a></li>
+          <li><a href="#skills"     class="nav-link" id="nav-habilidades">Skills</a></li>
+          <li><a href="#education"  class="nav-link" id="nav-educacion">Educación</a></li>
+          <li><a href="#contact"    class="nav-link" id="nav-contacto">Contacto</a></li>
         </ul>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
@@ -41,19 +43,51 @@
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
     <div class="hero-bg">
+      <canvas id="network-canvas" class="network-canvas"></canvas>
       <div class="hero-particles" id="hero-particles"></div>
     </div>
     <div class="hero-content">
-      <p class="hero-tag" id="hero-tag">👋 Hola, soy</p>
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Disponible para trabajar</span>
+      </div>
+      <p class="hero-tag" id="hero-tag">Hola, soy</p>
       <h1 class="hero-title" id="hero-title">
-        Tu <span class="gradient-text">Nombre</span><br />Aquí
+        Natali <span class="gradient-text">Alemán</span>
       </h1>
       <p class="hero-subtitle" id="hero-subtitle">
-        Desarrollador Web · Diseñador · Creador de experiencias digitales memorables
+        <span class="typing-wrapper">
+          <span id="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </span>
       </p>
       <div class="hero-cta" id="hero-cta">
-        <a href="#portfolio" class="btn btn-primary" id="btn-ver-trabajo">Ver mi trabajo</a>
-        <a href="#contact" class="btn btn-outline" id="btn-contactar">Contáctame</a>
+        <a href="#services" class="btn btn-primary" id="btn-ver-trabajo">
+          <span>Ver lo que hago</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline" id="btn-contactar">
+          <span>Contáctame</span>
+        </a>
+      </div>
+      <!-- Floating specialties -->
+      <div class="hero-specialties" id="hero-specialties">
+        <div class="specialty-chip">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <span>Web Design</span>
+        </div>
+        <div class="specialty-chip">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M7.5 17.5L10.5 13M16.5 17.5L13.5 13"/></svg>
+          <span>Networking</span>
+        </div>
+        <div class="specialty-chip">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          <span>QA Testing</span>
+        </div>
+        <div class="specialty-chip">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <span>DevOps</span>
+        </div>
       </div>
     </div>
     <div class="hero-scroll-hint" id="hero-scroll-hint">
@@ -75,41 +109,52 @@
           <div class="about-avatar">
             <div class="avatar-ring"></div>
             <div class="avatar-inner">
-              <span class="avatar-emoji">🧑‍💻</span>
+              <img src="natali.jpg" alt="Natali Joselin Alemán Perez" class="avatar-photo" />
             </div>
           </div>
           <div class="about-stats">
-            <div class="stat-item" id="stat-proyectos">
-              <span class="stat-number" data-target="20">0</span>
-              <span class="stat-label">Proyectos</span>
-            </div>
             <div class="stat-item" id="stat-experiencia">
               <span class="stat-number" data-target="3">0</span>
               <span class="stat-label">Años exp.</span>
             </div>
-            <div class="stat-item" id="stat-clientes">
-              <span class="stat-number" data-target="15">0</span>
-              <span class="stat-label">Clientes</span>
+            <div class="stat-item" id="stat-tecnologias">
+              <span class="stat-number" data-target="20">0</span>
+              <span class="stat-label">Tecnologías</span>
+            </div>
+            <div class="stat-item" id="stat-idiomas">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Idiomas</span>
             </div>
           </div>
         </div>
         <div class="about-text" id="about-text">
           <p>
-            Soy un apasionado del desarrollo web con experiencia en crear soluciones digitales
-            modernas y funcionales. Me especializo en crear interfaces atractivas y experiencias
-            de usuario excepcionales.
+            Soy <strong>Ingeniera en Software titulada</strong> con experiencia en desarrollo de aplicaciones web,
+            pruebas de software (QA) y soporte a infraestructura tecnológica.
           </p>
           <p>
-            Mi objetivo es combinar diseño y tecnología para construir productos que no solo
-            funcionen perfectamente, sino que también deleiten a quienes los usan.
+            Cuento con sólidos conocimientos en bases de datos, programación orientada a objetos y
+            administración de redes. Mi enfoque está en la <strong>optimización de procesos</strong> mediante
+            la automatización y digitalización, aportando soluciones eficientes, escalables y orientadas
+            a la mejora continua bajo <strong>metodologías ágiles</strong>.
           </p>
-          <div class="skills-grid" id="skills-grid">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Git</span>
+          <div class="about-info-chips">
+            <div class="info-chip" id="chip-location">
+              <span class="chip-icon">📍</span>
+              <span>San Luis Tecuahutitlán, Temascalapa, Edo. Méx.</span>
+            </div>
+            <div class="info-chip" id="chip-email">
+              <span class="chip-icon">📧</span>
+              <a href="mailto:alemanpereznatali@gmail.com">alemanpereznatali@gmail.com</a>
+            </div>
+            <div class="info-chip" id="chip-phone">
+              <span class="chip-icon">📞</span>
+              <a href="tel:+525629916281">56 2991 6281</a>
+            </div>
+            <div class="info-chip" id="chip-lang">
+              <span class="chip-icon">🌐</span>
+              <span>Español nativo · Inglés</span>
+            </div>
           </div>
           <a href="#contact" class="btn btn-primary" id="btn-about-contactar">Trabajemos juntos</a>
         </div>
@@ -117,105 +162,396 @@
     </div>
   </section>
 
-  <!-- ===== SERVICES ===== -->
+  <!-- ===== SERVICES / WHAT I DO ===== -->
   <section class="section services" id="services">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Servicios</span>
-        <h2 class="section-title" id="services-title">¿Qué ofrezco?</h2>
+        <span class="section-tag">Especialidades</span>
+        <h2 class="section-title" id="services-title">Lo que hago</h2>
+        <p class="section-subtitle">Mis áreas de expertise como Ingeniera en Software</p>
       </div>
       <div class="services-grid" id="services-grid">
-        <article class="service-card" id="service-web">
-          <div class="service-icon">🌐</div>
-          <h3 class="service-title">Desarrollo Web</h3>
+
+        <article class="service-card featured" id="service-webdesign">
+          <div class="service-badge">Especialidad</div>
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="0.5" fill="var(--primary)"/></svg>
+          </div>
+          <h3 class="service-title">Diseño & Desarrollo Web</h3>
           <p class="service-desc">
-            Sitios web modernos, rápidos y responsivos adaptados a tus necesidades específicas.
+            Creación de sitios web modernos, responsivos y con interfaces UI/UX atractivas.
+            HTML, CSS, JavaScript, React, Bootstrap, Laravel y patrón MVC.
           </p>
+          <div class="service-tags">
+            <span>HTML5</span><span>CSS3</span><span>React</span><span>Laravel</span><span>UI/UX</span>
+          </div>
         </article>
-        <article class="service-card featured" id="service-design">
-          <div class="service-badge">Popular</div>
-          <div class="service-icon">🎨</div>
-          <h3 class="service-title">Diseño UI/UX</h3>
+
+        <article class="service-card" id="service-networking">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M7.5 17.5L10.5 13M16.5 17.5L13.5 13"/><circle cx="12" cy="12" r="1" fill="var(--accent)"/></svg>
+          </div>
+          <h3 class="service-title">Redes & Infraestructura</h3>
           <p class="service-desc">
-            Interfaces intuitivas y atractivas que mejoran la experiencia del usuario final.
+            Administración de redes LAN/MAN/WAN, configuración TCP/IP, subredes,
+            monitoreo de rendimiento, gestión de usuarios y recursos compartidos.
           </p>
+          <div class="service-tags">
+            <span>TCP/IP</span><span>LAN/WAN</span><span>Subredes</span><span>Linux</span>
+          </div>
         </article>
-        <article class="service-card" id="service-seo">
-          <div class="service-icon">📈</div>
-          <h3 class="service-title">Optimización SEO</h3>
+
+        <article class="service-card" id="service-qa">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+          </div>
+          <h3 class="service-title">QA & Testing</h3>
           <p class="service-desc">
-            Mejora tu visibilidad en buscadores y atrae más tráfico orgánico a tu sitio.
+            Pruebas funcionales, de integración, regresión y automatizadas.
+            Validación de APIs REST/SOAP con Postman, Selenium, Cypress y Playwright.
           </p>
+          <div class="service-tags">
+            <span>Postman</span><span>Selenium</span><span>Cypress</span><span>APIs</span>
+          </div>
         </article>
-        <article class="service-card" id="service-mobile">
-          <div class="service-icon">📱</div>
-          <h3 class="service-title">Diseño Responsivo</h3>
+
+        <article class="service-card" id="service-devops">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="service-title">DevOps & Cloud</h3>
           <p class="service-desc">
-            Tu sitio se verá perfecto en cualquier dispositivo, desde móvil hasta escritorio.
+            Docker, microservicios, CI/CD con Jenkins, control de versiones con Git/GitHub,
+            despliegue en AWS, Azure y Firebase.
           </p>
+          <div class="service-tags">
+            <span>Docker</span><span>AWS</span><span>CI/CD</span><span>Git</span>
+          </div>
         </article>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== PORTFOLIO ===== -->
-  <section class="section portfolio" id="portfolio">
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience" id="experience">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Portfolio</span>
-        <h2 class="section-title" id="portfolio-title">Mis Proyectos</h2>
+        <span class="section-tag">Trayectoria</span>
+        <h2 class="section-title" id="experience-title">Experiencia Laboral</h2>
       </div>
-      <div class="portfolio-filters" id="portfolio-filters">
-        <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
-        <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
-        <button class="filter-btn" data-filter="design" id="filter-design">Diseño</button>
-        <button class="filter-btn" data-filter="app" id="filter-app">Apps</button>
+      <div class="timeline" id="timeline">
+
+        <article class="timeline-item" id="job-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Ingeniera de Software / QA / Soporte de Sistemas</h3>
+                <p class="timeline-company">Maquinados y Fusiones Mexicanas S. de R.L. de C.V.</p>
+              </div>
+              <span class="timeline-period">2023 – Presente</span>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-area" id="area-qa">
+                <h4>🧪 Aseguramiento de Calidad (QA) y Pruebas</h4>
+                <p>Diseño y ejecución de casos de prueba (funcionales, unitarias, integración, regresión y compatibilidad) para aplicaciones web y entornos cliente-servidor. Identificación, documentación y seguimiento de defectos relacionados con UI, lógica funcional y consumo de servicios.</p>
+              </div>
+              <div class="timeline-area" id="area-api">
+                <h4>🔌 Validación de APIs y Backend</h4>
+                <p>Pruebas y validación de endpoints de APIs REST y SOAP utilizando Postman y Selenium, analizando peticiones HTTP (headers, body, parámetros), manejo de sesiones y autenticación por tokens.</p>
+              </div>
+              <div class="timeline-area" id="area-frontend">
+                <h4>💻 Desarrollo Front-End y Base de Datos</h4>
+                <p>Validación de interfaces web interactivas y responsivas (HTML, CSS, Bootstrap, JavaScript). Verificación de persistencia y consistencia de datos en MySQL mediante consultas SQL y operaciones CRUD.</p>
+              </div>
+              <div class="timeline-area" id="area-infra">
+                <h4>🖧 Infraestructura y Soporte Técnico</h4>
+                <p>Instalación, configuración y mantenimiento preventivo/correctivo de equipos de cómputo y sistemas operativos (Windows, Linux, macOS). Gestión de accesos, usuarios, permisos, recursos compartidos y redes locales.</p>
+              </div>
+              <div class="timeline-area" id="area-tools">
+                <h4>🛠️ Herramientas y Metodologías</h4>
+                <p>Configuración de entornos de prueba locales con XAMPP. Uso de Git y GitHub para control de versiones y flujo colaborativo bajo metodología ágil SCRUM.</p>
+              </div>
+            </div>
+            <div class="timeline-tags">
+              <span class="tl-tag">QA</span>
+              <span class="tl-tag">Postman</span>
+              <span class="tl-tag">Selenium</span>
+              <span class="tl-tag">MySQL</span>
+              <span class="tl-tag">Git</span>
+              <span class="tl-tag">SCRUM</span>
+              <span class="tl-tag">REST API</span>
+              <span class="tl-tag">SOAP</span>
+            </div>
+          </div>
+        </article>
+
       </div>
-      <div class="portfolio-grid" id="portfolio-grid">
-        <article class="portfolio-card" data-category="web" id="project-1">
-          <div class="portfolio-img">
-            <span class="portfolio-emoji">🛒</span>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Skills</span>
+        <h2 class="section-title" id="skills-title">Habilidades Técnicas</h2>
+        <p class="section-subtitle">Mi stack tecnológico como Ingeniera en Software</p>
+      </div>
+      <div class="skills-categories" id="skills-categories">
+
+        <!-- 1. Lenguajes de Programación -->
+        <div class="skill-category" id="cat-langs">
+          <div class="skill-cat-icon">💻</div>
+          <h3 class="skill-cat-title">Lenguajes de Programación</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">☕</span> Java</span>
+            <span class="skill-tag"><span class="st-icon">🐍</span> Python</span>
+            <span class="skill-tag"><span class="st-icon">🔷</span> C#</span>
+            <span class="skill-tag"><span class="st-icon">🐘</span> PHP</span>
+            <span class="skill-tag"><span class="st-icon">⚡</span> JavaScript</span>
+            <span class="skill-tag"><span class="st-icon">🍎</span> Swift</span>
+            <span class="skill-tag"><span class="st-icon">🤖</span> Kotlin</span>
+            <span class="skill-tag"><span class="st-icon">🦀</span> Rust</span>
           </div>
-          <div class="portfolio-info">
-            <span class="portfolio-cat">Web</span>
-            <h3>Tienda en Línea</h3>
-            <p>E-commerce moderno con carrito de compras y pasarela de pago integrada.</p>
-            <a href="#" class="portfolio-link" id="link-project-1">Ver proyecto →</a>
+        </div>
+
+        <!-- 2. Frameworks y Librerías -->
+        <div class="skill-category" id="cat-frameworks">
+          <div class="skill-cat-icon">⚙️</div>
+          <h3 class="skill-cat-title">Frameworks y Librerías</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🔴</span> Laravel</span>
+            <span class="skill-tag"><span class="st-icon">🅱️</span> Bootstrap</span>
+            <span class="skill-tag"><span class="st-icon">⚛️</span> React</span>
+            <span class="skill-tag"><span class="st-icon">💚</span> Node.js</span>
+            <span class="skill-tag"><span class="st-icon">🚂</span> Express</span>
+            <span class="skill-tag"><span class="st-icon">🏗️</span> Patrón MVC</span>
+          </div>
+        </div>
+
+        <!-- 3. Bases de Datos -->
+        <div class="skill-category" id="cat-databases">
+          <div class="skill-cat-icon">🗄️</div>
+          <h3 class="skill-cat-title">Bases de Datos</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🐬</span> MySQL</span>
+            <span class="skill-tag"><span class="st-icon">🔷</span> SQL Server</span>
+            <span class="skill-tag"><span class="st-icon">🐘</span> PostgreSQL</span>
+            <span class="skill-tag"><span class="st-icon">🍃</span> MongoDB</span>
+            <span class="skill-tag"><span class="st-icon">⚡</span> DynamoDB</span>
+          </div>
+        </div>
+
+        <!-- 4. Pruebas de Software (QA) y Automatización — EXPANDIDA -->
+        <div class="skill-category featured-cat" id="cat-qa">
+          <div class="skill-cat-badge">⭐ Perfil Destacado</div>
+          <div class="skill-cat-icon">🧪</div>
+          <h3 class="skill-cat-title">Pruebas de Software (QA) y Automatización</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">📮</span> Postman</span>
+            <span class="skill-tag"><span class="st-icon">🌐</span> Selenium</span>
+            <span class="skill-tag"><span class="st-icon">🥒</span> Cucumber</span>
+            <span class="skill-tag"><span class="st-icon">🎭</span> Playwright</span>
+            <span class="skill-tag"><span class="st-icon">🌲</span> Cypress</span>
+            <span class="skill-tag"><span class="st-icon">✅</span> JUnit</span>
+            <span class="skill-tag"><span class="st-icon">🐍</span> PyTest</span>
+            <span class="skill-tag"><span class="st-icon">📋</span> Casos de prueba</span>
+            <span class="skill-tag"><span class="st-icon">🤖</span> Automatización</span>
+            <span class="skill-tag"><span class="st-icon">📊</span> Análisis de logs</span>
+            <span class="skill-tag"><span class="st-icon">🚀</span> Pre-release testing</span>
+          </div>
+        </div>
+
+        <!-- 5. Gestión de Pruebas y Defectos -->
+        <div class="skill-category" id="cat-management">
+          <div class="skill-cat-icon">📋</div>
+          <h3 class="skill-cat-title">Gestión de Pruebas y Defectos</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">📘</span> Jira</span>
+            <span class="skill-tag"><span class="st-icon">📌</span> Trello</span>
+            <span class="skill-tag"><span class="st-icon">🔵</span> Azure DevOps</span>
+            <span class="skill-tag"><span class="st-icon">🐛</span> Bug tracking</span>
+            <span class="skill-tag"><span class="st-icon">📝</span> Documentación de defectos</span>
+          </div>
+        </div>
+
+        <!-- 6. Herramientas de Desarrollo y Control de Versiones -->
+        <div class="skill-category" id="cat-vcs">
+          <div class="skill-cat-icon">🔀</div>
+          <h3 class="skill-cat-title">Control de Versiones y Herramientas</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🔧</span> Git</span>
+            <span class="skill-tag"><span class="st-icon">🐙</span> GitHub</span>
+            <span class="skill-tag"><span class="st-icon">🦊</span> GitLab</span>
+            <span class="skill-tag"><span class="st-icon">🪣</span> Bitbucket</span>
+            <span class="skill-tag"><span class="st-icon">🌿</span> GitFlow</span>
+            <span class="skill-tag"><span class="st-icon">🔃</span> Pull Requests</span>
+            <span class="skill-tag"><span class="st-icon">👀</span> Code Reviews</span>
+          </div>
+          <h4 class="skill-subcat-title">📦 Manejadores de Paquetes</h4>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🎼</span> Composer</span>
+            <span class="skill-tag"><span class="st-icon">📦</span> NPM</span>
+            <span class="skill-tag"><span class="st-icon">🧶</span> Yarn</span>
+            <span class="skill-tag"><span class="st-icon">🐍</span> Pip</span>
+          </div>
+        </div>
+
+        <!-- 7. IDEs y Servidores Locales -->
+        <div class="skill-category" id="cat-ides">
+          <div class="skill-cat-icon">🖥️</div>
+          <h3 class="skill-cat-title">Entornos de Desarrollo (IDEs)</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🟣</span> Visual Studio</span>
+            <span class="skill-tag"><span class="st-icon">🔵</span> VS Code</span>
+            <span class="skill-tag"><span class="st-icon">🟠</span> IntelliJ IDEA</span>
+            <span class="skill-tag"><span class="st-icon">🤖</span> Android Studio</span>
+            <span class="skill-tag"><span class="st-icon">🐍</span> PyCharm</span>
+          </div>
+          <h4 class="skill-subcat-title">🖧 Servidores Locales</h4>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🟧</span> XAMPP</span>
+            <span class="skill-tag"><span class="st-icon">🔵</span> Laragon</span>
+            <span class="skill-tag"><span class="st-icon">🪶</span> Apache</span>
+            <span class="skill-tag"><span class="st-icon">🟩</span> Nginx</span>
+          </div>
+        </div>
+
+        <!-- 8. Redes y Administración -->
+        <div class="skill-category" id="cat-networks">
+          <div class="skill-cat-icon">🌐</div>
+          <h3 class="skill-cat-title">Redes y Administración</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">📡</span> TCP/IP</span>
+            <span class="skill-tag"><span class="st-icon">🔒</span> HTTP/HTTPS</span>
+            <span class="skill-tag"><span class="st-icon">📂</span> FTP</span>
+            <span class="skill-tag"><span class="st-icon">🔌</span> LAN / MAN / WAN</span>
+            <span class="skill-tag"><span class="st-icon">🧮</span> Subredes</span>
+            <span class="skill-tag"><span class="st-icon">📈</span> Monitoreo de rendimiento</span>
+          </div>
+        </div>
+
+        <!-- 9. DevOps y Contenedores -->
+        <div class="skill-category" id="cat-devops">
+          <div class="skill-cat-icon">🐳</div>
+          <h3 class="skill-cat-title">DevOps y Contenedores</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🐋</span> Docker</span>
+            <span class="skill-tag"><span class="st-icon">🧩</span> Microservicios</span>
+            <span class="skill-tag"><span class="st-icon">♾️</span> CI/CD</span>
+            <span class="skill-tag"><span class="st-icon">👷</span> Jenkins</span>
+            <span class="skill-tag"><span class="st-icon">📊</span> SonarQube</span>
+            <span class="skill-tag"><span class="st-icon">🔑</span> OAuth 2.0</span>
+            <span class="skill-tag"><span class="st-icon">⚙️</span> Variables de entorno</span>
+          </div>
+        </div>
+
+        <!-- 10. Cloud Computing ☁️ -->
+        <div class="skill-category cloud-cat" id="cat-cloud">
+          <div class="skill-cat-icon">☁️</div>
+          <h3 class="skill-cat-title">Cloud Computing</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🟠</span> AWS</span>
+            <span class="skill-tag"><span class="st-icon">🔵</span> Microsoft Azure</span>
+            <span class="skill-tag"><span class="st-icon">🔥</span> Firebase</span>
+            <span class="skill-tag"><span class="st-icon">🪣</span> AWS S3</span>
+            <span class="skill-tag"><span class="st-icon">💾</span> Azure Blob Storage</span>
+            <span class="skill-tag"><span class="st-icon">🖥️</span> AWS EC2</span>
+            <span class="skill-tag"><span class="st-icon">⚡</span> Cloud Functions</span>
+          </div>
+        </div>
+
+        <!-- 11. Seguridad Informática -->
+        <div class="skill-category" id="cat-security">
+          <div class="skill-cat-icon">🔐</div>
+          <h3 class="skill-cat-title">Seguridad Informática</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">💉</span> SQL Injection</span>
+            <span class="skill-tag"><span class="st-icon">⚠️</span> XSS</span>
+            <span class="skill-tag"><span class="st-icon">🛡️</span> CSRF</span>
+            <span class="skill-tag"><span class="st-icon">🔒</span> Sesiones seguras</span>
+          </div>
+        </div>
+
+        <!-- 12. Modelado y Diseño -->
+        <div class="skill-category" id="cat-design">
+          <div class="skill-cat-icon">🎨</div>
+          <h3 class="skill-cat-title">Modelado y Diseño</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🖌️</span> Figma</span>
+            <span class="skill-tag"><span class="st-icon">📐</span> Draw.io</span>
+            <span class="skill-tag"><span class="st-icon">💎</span> Lucidchart</span>
+            <span class="skill-tag"><span class="st-icon">📄</span> Swagger / OpenAPI</span>
+            <span class="skill-tag"><span class="st-icon">📊</span> UML</span>
+          </div>
+        </div>
+
+        <!-- 13. Metodologías y Soft Skills Técnicas -->
+        <div class="skill-category" id="cat-methods">
+          <div class="skill-cat-icon">🗂️</div>
+          <h3 class="skill-cat-title">Metodologías y Soft Skills</h3>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="st-icon">🏃</span> SCRUM</span>
+            <span class="skill-tag"><span class="st-icon">📋</span> Kanban</span>
+            <span class="skill-tag"><span class="st-icon">🔄</span> Metodologías Ágiles</span>
+            <span class="skill-tag"><span class="st-icon">📖</span> Manuales técnicos</span>
+            <span class="skill-tag"><span class="st-icon">📝</span> Requerimientos</span>
+            <span class="skill-tag"><span class="st-icon">📚</span> Historias de usuario</span>
+            <span class="skill-tag"><span class="st-icon">🤝</span> Trabajo en equipo</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Formación</span>
+        <h2 class="section-title" id="education-title">Educación</h2>
+      </div>
+      <div class="education-grid" id="education-grid">
+
+        <article class="edu-card" id="edu-universidad">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <span class="edu-period">2021 – 2024</span>
+            <h3 class="edu-degree">Ingeniería en Software <span class="edu-badge">Titulada</span></h3>
+            <p class="edu-institution">Universidad Politécnica de Tecámac</p>
           </div>
         </article>
-        <article class="portfolio-card" data-category="design" id="project-2">
-          <div class="portfolio-img">
-            <span class="portfolio-emoji">📊</span>
-          </div>
-          <div class="portfolio-info">
-            <span class="portfolio-cat">Diseño</span>
-            <h3>Dashboard Analytics</h3>
-            <p>Panel de control con visualización de datos en tiempo real y gráficas interactivas.</p>
-            <a href="#" class="portfolio-link" id="link-project-2">Ver proyecto →</a>
+
+        <article class="edu-card" id="edu-cecytem">
+          <div class="edu-icon">💡</div>
+          <div class="edu-body">
+            <span class="edu-period">2018 – 2021</span>
+            <h3 class="edu-degree">Técnico en Programación</h3>
+            <p class="edu-institution">CECyTEM — Colegio de Estudios Científicos y Tecnológicos del Estado de México</p>
           </div>
         </article>
-        <article class="portfolio-card" data-category="app" id="project-3">
-          <div class="portfolio-img">
-            <span class="portfolio-emoji">📱</span>
-          </div>
-          <div class="portfolio-info">
-            <span class="portfolio-cat">App</span>
-            <h3>App de Productividad</h3>
-            <p>Aplicación móvil para gestión de tareas con sincronización en la nube.</p>
-            <a href="#" class="portfolio-link" id="link-project-3">Ver proyecto →</a>
+
+        <article class="edu-card" id="edu-secundaria">
+          <div class="edu-icon">🤖</div>
+          <div class="edu-body">
+            <span class="edu-period">2015 – 2018</span>
+            <h3 class="edu-degree">Taller de Robótica</h3>
+            <p class="edu-institution">Escuela Secundaria Técnica No. 134 "Ignacio Manuel Altamirano"</p>
           </div>
         </article>
-        <article class="portfolio-card" data-category="web" id="project-4">
-          <div class="portfolio-img">
-            <span class="portfolio-emoji">🏨</span>
-          </div>
-          <div class="portfolio-info">
-            <span class="portfolio-cat">Web</span>
-            <h3>Sitio de Reservaciones</h3>
-            <p>Plataforma de reservas para hoteles con calendario y gestión de disponibilidad.</p>
-            <a href="#" class="portfolio-link" id="link-project-4">Ver proyecto →</a>
+
+        <article class="edu-card cert-card" id="edu-microsoft">
+          <div class="edu-icon">🏆</div>
+          <div class="edu-body">
+            <span class="edu-period">Certificación</span>
+            <h3 class="edu-degree">Microsoft Office</h3>
+            <p class="edu-institution">Certificación oficial de Microsoft</p>
           </div>
         </article>
+
       </div>
     </div>
   </section>
@@ -230,29 +566,29 @@
       <div class="contact-grid">
         <div class="contact-info" id="contact-info">
           <p class="contact-desc">
-            ¿Tienes un proyecto en mente? Me encantaría escucharte. Envíame un mensaje
-            y te responderé lo antes posible.
+            ¿Tienes un proyecto en mente o una oportunidad laboral? Me encantaría escucharte.
+            Envíame un mensaje y te responderé lo antes posible.
           </p>
           <div class="contact-items">
             <div class="contact-item" id="contact-email-item">
               <div class="contact-item-icon">📧</div>
               <div>
                 <p class="contact-item-label">Email</p>
-                <a href="mailto:tu@email.com" class="contact-item-value" id="contact-email">tu@email.com</a>
+                <a href="mailto:alemanpereznatali@gmail.com" class="contact-item-value" id="contact-email">alemanpereznatali@gmail.com</a>
               </div>
             </div>
             <div class="contact-item" id="contact-phone-item">
               <div class="contact-item-icon">📞</div>
               <div>
                 <p class="contact-item-label">Teléfono</p>
-                <a href="tel:+1234567890" class="contact-item-value" id="contact-phone">+123 456 7890</a>
+                <a href="tel:+525629916281" class="contact-item-value" id="contact-phone">56 2991 6281</a>
               </div>
             </div>
             <div class="contact-item" id="contact-location-item">
               <div class="contact-item-icon">📍</div>
               <div>
                 <p class="contact-item-label">Ubicación</p>
-                <p class="contact-item-value" id="contact-location">Tu Ciudad, País</p>
+                <p class="contact-item-value" id="contact-location">San Luis Tecuahutitlán, Temascalapa, Edo. Méx.</p>
               </div>
             </div>
           </div>
@@ -272,7 +608,7 @@
           </div>
           <div class="form-group" id="form-group-message">
             <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto o propuesta..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full" id="btn-send">
             <span>Enviar mensaje</span>
@@ -292,22 +628,26 @@
       <div class="footer-top">
         <a href="#hero" class="nav-logo footer-logo" id="footer-logo">
           <span class="logo-dot"></span>
-          MiSitio
+          NA.dev
         </a>
+        <p class="footer-tagline">Ingeniera en Software · Web Design · Networking · QA</p>
         <div class="footer-social" id="footer-social">
-          <a href="#" class="social-link" id="social-github" aria-label="GitHub">
+          <a href="mailto:alemanpereznatali@gmail.com" class="social-link" id="social-email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a href="tel:+525629916281" class="social-link" id="social-phone" aria-label="Teléfono">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </a>
+          <a href="https://github.com/NataliAleman" class="social-link" id="social-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
           </a>
-          <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/natali-joselin-alem%C3%A1n-perez-a2a7b3321" class="social-link" id="social-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p id="footer-copy">&copy; <span id="year"></span> MiSitio. Todos los derechos reservados.</p>
+        <p id="footer-copy">&copy; <span id="year"></span> Natali Joselin Alemán Perez. Todos los derechos reservados.</p>
         <p class="footer-made" id="footer-made">Hecho con ❤️ y mucho ☕</p>
       </div>
     </div>
