@@ -1255,6 +1255,218 @@ a.contact-item-value:hover { color: var(--primary); }
 }
 
 /* =============================================
+   CV DOWNLOAD BUTTON
+   ============================================= */
+.btn-cv {
+  background: linear-gradient(135deg, rgba(130, 255, 180, 0.15), rgba(130, 255, 180, 0.05));
+  color: hsl(145, 70%, 60%);
+  border: 1.5px solid rgba(130, 255, 180, 0.4);
+}
+
+.btn-cv:hover {
+  background: linear-gradient(135deg, rgba(130, 255, 180, 0.25), rgba(130, 255, 180, 0.1));
+  box-shadow: 0 8px 32px rgba(130, 255, 180, 0.25);
+  transform: translateY(-2px);
+  border-color: rgba(130, 255, 180, 0.6);
+}
+
+.btn-cv svg {
+  animation: bounce-download 2s ease-in-out infinite;
+}
+
+@keyframes bounce-download {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}
+
+.btn-sm {
+  padding: 10px 20px;
+  font-size: 0.85rem;
+}
+
+/* =============================================
+   CERTIFICATIONS & COURSES
+   ============================================= */
+.certifications {
+  background: linear-gradient(180deg, var(--bg) 0%, rgb(18, 16, 14) 50%, var(--bg) 100%);
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.cert-card-v2 {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cert-card-v2::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.cert-card-v2:hover::before {
+  transform: scaleX(1);
+}
+
+.cert-card-v2:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(10, 10, 10, 0.8), 0 0 30px var(--primary-glow);
+}
+
+/* Featured cert (Desafío Latam) */
+.featured-cert {
+  border-color: rgba(194, 122, 255, 0.35);
+  background: linear-gradient(135deg, var(--bg-card), rgba(120, 50, 180, 0.12));
+  grid-column: span 2;
+}
+
+.featured-cert::before {
+  transform: scaleX(1);
+}
+
+.featured-cert:hover {
+  background: linear-gradient(135deg, var(--bg-card), rgba(120, 50, 180, 0.2));
+}
+
+/* Office cert cards */
+.office-cert {
+  border-color: rgba(0, 120, 212, 0.25);
+}
+
+.office-cert:hover {
+  border-color: rgba(0, 120, 212, 0.5);
+  box-shadow: 0 12px 40px rgba(10, 10, 10, 0.8), 0 0 30px rgba(0, 120, 212, 0.2);
+}
+
+/* Card badge */
+.cert-card-badge {
+  display: inline-block;
+  width: fit-content;
+  padding: 4px 14px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.office-badge {
+  background: linear-gradient(135deg, rgb(0, 120, 212), rgb(0, 80, 180));
+}
+
+/* Card icon */
+.cert-card-icon {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(194, 122, 255, 0.06);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.office-cert .cert-card-icon {
+  background: rgba(0, 120, 212, 0.06);
+  height: 160px;
+}
+
+.cert-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  transition: transform 0.5s ease;
+}
+
+.cert-card-v2:hover .cert-preview-img {
+  transform: scale(1.05);
+}
+
+.cert-card-v2:hover .cert-card-icon {
+  border-color: var(--border-strong);
+}
+
+/* Card title */
+.cert-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Card institution */
+.cert-card-institution {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.office-cert .cert-card-institution {
+  color: rgb(60, 160, 255);
+}
+
+.cert-card-institution svg {
+  flex-shrink: 0;
+}
+
+/* Card description */
+.cert-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Card tags */
+.cert-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cert-card-tags span {
+  display: inline-block;
+  padding: 3px 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(194, 122, 255, 0.1);
+  border: 1px solid rgba(194, 122, 255, 0.25);
+  border-radius: 50px;
+  letter-spacing: 0.03em;
+}
+
+/* Card button - auto push to bottom */
+.cert-card-v2 .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* =============================================
    SCROLL REVEAL ANIMATION
    ============================================= */
 .reveal {
@@ -1308,6 +1520,9 @@ a.contact-item-value:hover { color: var(--primary); }
   .skills-categories { grid-template-columns: 1fr; }
   .featured-cat { grid-column: span 1; }
 
+  .certs-grid { grid-template-columns: 1fr; }
+  .featured-cert { grid-column: span 1; }
+
   .contact-form { padding: 28px 20px; }
 
   .footer-top { flex-direction: column; align-items: flex-start; }
@@ -1333,6 +1548,8 @@ a.contact-item-value:hover { color: var(--primary); }
   .section { padding: 70px 0; }
   .services-grid { grid-template-columns: 1fr; }
   .skills-categories { grid-template-columns: 1fr; }
+  .certs-grid { grid-template-columns: 1fr; }
+  .featured-cert { grid-column: span 1; }
 
   .specialty-chip {
     padding: 8px 12px;
