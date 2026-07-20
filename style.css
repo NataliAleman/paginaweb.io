@@ -658,6 +658,33 @@ ul { list-style: none; }
   font-size: 1.02rem;
 }
 
+.about-info-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.info-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.chip-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(194, 122, 255, 0.1);
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -686,7 +713,7 @@ ul { list-style: none; }
 }
 
 .st-icon {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 1;
   flex-shrink: 0;
 }
@@ -743,8 +770,9 @@ ul { list-style: none; }
 }
 
 .skill-cat-icon {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
+  color: var(--primary);
 }
 
 .skill-cat-title {
