@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const revealEls = document.querySelectorAll(
     '.service-card, .portfolio-card, .about-grid, .contact-grid, ' +
     '.section-header, .about-stats, .skills-grid, .skill-category, ' +
-    '.timeline-item, .edu-card'
+    '.timeline-item, .edu-card, .cert-card-v2'
   );
 
   revealEls.forEach(el => el.classList.add('reveal'));
@@ -295,13 +295,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ─── Formulario de contacto ─────────────── */
+  /* ─── Formulario de contacto (Web3Forms) ──── */
   const form        = document.getElementById('contact-form');
   const formSuccess = document.getElementById('form-success');
+  const formError   = document.getElementById('form-error');
   const btnSend     = document.getElementById('btn-send');
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Ocultar mensajes previos
+    formSuccess.classList.add('hidden');
+    formError.classList.add('hidden');
 
     // Validación simple
     let valid = true;
@@ -327,18 +332,38 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Simula envío
+    // Enviar formulario a Web3Forms
     const originalHTML = btnSend.innerHTML;
     btnSend.innerHTML   = '<span>Enviando…</span>';
     btnSend.disabled    = true;
 
-    setTimeout(() => {
-      form.reset();
+    try {
+      const formData = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const result = await response.json();
+      console.log('Web3Forms respuesta:', result);
+
+      if (result.success) {
+        form.reset();
+        formSuccess.classList.remove('hidden');
+        setTimeout(() => formSuccess.classList.add('hidden'), 7000);
+      } else {
+        console.error('Web3Forms error:', result.message);
+        formError.classList.remove('hidden');
+        setTimeout(() => formError.classList.add('hidden'), 7000);
+      }
+    } catch (error) {
+      console.error('Error de red:', error);
+      formError.classList.remove('hidden');
+      setTimeout(() => formError.classList.add('hidden'), 7000);
+    } finally {
       btnSend.innerHTML = originalHTML;
       btnSend.disabled  = false;
-      formSuccess.classList.remove('hidden');
-      setTimeout(() => formSuccess.classList.add('hidden'), 5000);
-    }, 1500);
+    }
   });
 
   // Limpia error al escribir

@@ -38,7 +38,7 @@
   --shadow-glow: 0 0 40px var(--primary-glow);
   --shadow-card: 0 8px 32px rgba(10, 10, 10, 0.7);
 
-  --font: 'Outfit', system-ui, sans-serif;
+  --font: 'Poppins', system-ui, sans-serif;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1149,6 +1149,17 @@ a.contact-item-value:hover { color: var(--primary); }
   padding: 12px;
   background: rgba(130, 255, 180, 0.1);
   border: 1px solid rgba(130, 255, 180, 0.3);
+  border-radius: var(--radius-md);
+}
+
+.form-error {
+  text-align: center;
+  color: hsl(0, 80%, 65%);
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 12px;
+  background: rgba(255, 100, 100, 0.1);
+  border: 1px solid rgba(255, 100, 100, 0.3);
   border-radius: var(--radius-md);
 }
 
