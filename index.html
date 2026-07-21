@@ -17,6 +17,13 @@
 </head>
 <body>
 
+  <!-- ===== BACKGROUND BLOBS ===== -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
   <!-- ===== NAVBAR ===== -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
@@ -29,6 +36,7 @@
           <li><a href="#hero"       class="nav-link active" id="nav-inicio">Inicio</a></li>
           <li><a href="#about"      class="nav-link" id="nav-sobre-mi">Sobre mí</a></li>
           <li><a href="#services"   class="nav-link" id="nav-servicios">Servicios</a></li>
+          <li><a href="#projects"   class="nav-link" id="nav-proyectos">Proyectos</a></li>
           <li><a href="#experience" class="nav-link" id="nav-experiencia">Experiencia</a></li>
           <li><a href="#skills"     class="nav-link" id="nav-habilidades">Skills</a></li>
           <li><a href="#education"  class="nav-link" id="nav-educacion">Educación</a></li>
@@ -179,7 +187,7 @@
       </div>
       <div class="services-grid" id="services-grid">
 
-        <article class="service-card featured" id="service-webdesign">
+        <article class="service-card glass-panel featured" id="service-webdesign">
           <div class="service-badge">Especialidad</div>
           <div class="service-icon">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="0.5" fill="var(--primary)"/></svg>
@@ -194,7 +202,7 @@
           </div>
         </article>
 
-        <article class="service-card" id="service-networking">
+        <article class="service-card glass-panel" id="service-networking">
           <div class="service-icon">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M7.5 17.5L10.5 13M16.5 17.5L13.5 13"/><circle cx="12" cy="12" r="1" fill="var(--accent)"/></svg>
           </div>
@@ -208,7 +216,7 @@
           </div>
         </article>
 
-        <article class="service-card" id="service-qa">
+        <article class="service-card glass-panel" id="service-qa">
           <div class="service-icon">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
           </div>
@@ -222,7 +230,7 @@
           </div>
         </article>
 
-        <article class="service-card" id="service-devops">
+        <article class="service-card glass-panel" id="service-devops">
           <div class="service-icon">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
@@ -251,34 +259,34 @@
 
         <article class="timeline-item" id="job-1">
           <div class="timeline-dot"></div>
-          <div class="timeline-card">
+          <div class="timeline-card glass-panel">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Ingeniera de Software / QA / Soporte de Sistemas</h3>
+                <h3 class="timeline-role">Ingeniera de Software / QA / Soporte de Infraestructura TI</h3>
                 <p class="timeline-company">Maquinados y Fusiones Mexicanas S. de R.L. de C.V.</p>
               </div>
               <span class="timeline-period">2023 – Presente</span>
             </div>
             <div class="timeline-body">
               <div class="timeline-area" id="area-qa">
-                <h4><i class='bx bx-test-tube'></i> Aseguramiento de Calidad (QA) y Pruebas</h4>
-                <p>Diseño y ejecución de casos de prueba (funcionales, unitarias, integración, regresión y compatibilidad) para aplicaciones web y entornos cliente-servidor. Identificación, documentación y seguimiento de defectos relacionados con UI, lógica funcional y consumo de servicios.</p>
+                <h4><i class='bx bx-check-shield'></i> Ingeniería de Calidad (QA)</h4>
+                <p>Planificación y ejecución de ciclos de prueba exhaustivos (funcionales, de integración, regresión y compatibilidad) en arquitecturas web y cliente-servidor. Reporte y gestión analítica de incidencias utilizando estándares de la industria para garantizar la estabilidad del producto.</p>
               </div>
               <div class="timeline-area" id="area-api">
-                <h4><i class='bx bx-plug'></i> Validación de APIs y Backend</h4>
-                <p>Pruebas y validación de endpoints de APIs REST y SOAP utilizando Postman y Selenium, analizando peticiones HTTP (headers, body, parámetros), manejo de sesiones y autenticación por tokens.</p>
+                <h4><i class='bx bx-data'></i> Integración y Validación Backend</h4>
+                <p>Auditoría técnica de servicios web (REST y SOAP). Automatización y ejecución de pruebas de endpoints mediante Postman y Selenium, incluyendo validación de carga útil, cabeceras HTTP, protocolos de autenticación y manejo seguro de sesiones.</p>
               </div>
               <div class="timeline-area" id="area-frontend">
-                <h4><i class='bx bx-code-alt'></i> Desarrollo Front-End y Base de Datos</h4>
-                <p>Validación de interfaces web interactivas y responsivas (HTML, CSS, Bootstrap, JavaScript). Verificación de persistencia y consistencia de datos en MySQL mediante consultas SQL y operaciones CRUD.</p>
+                <h4><i class='bx bx-code-block'></i> Desarrollo Web y Persistencia de Datos</h4>
+                <p>Construcción y optimización de interfaces de usuario responsivas bajo tecnologías estándar (HTML5, CSS3, JavaScript). Estructuración y mantenimiento de bases de datos relacionales (MySQL) mediante modelado riguroso y consultas SQL avanzadas.</p>
               </div>
               <div class="timeline-area" id="area-infra">
-                <h4><i class='bx bx-server'></i> Infraestructura y Soporte Técnico</h4>
-                <p>Instalación, configuración y mantenimiento preventivo/correctivo de equipos de cómputo y sistemas operativos (Windows, Linux, macOS). Gestión de accesos, usuarios, permisos, recursos compartidos y redes locales.</p>
+                <h4><i class='bx bx-network-chart'></i> Administración de Infraestructura TI</h4>
+                <p>Gestión y soporte técnico de entornos multiplataforma (Windows, Linux, macOS). Administración de políticas de seguridad, control de accesos, mantenimiento preventivo de hardware y configuración de redes locales y recursos compartidos.</p>
               </div>
               <div class="timeline-area" id="area-tools">
-                <h4>🛠️ Herramientas y Metodologías</h4>
-                <p>Configuración de entornos de prueba locales con XAMPP. Uso de Git y GitHub para control de versiones y flujo colaborativo bajo metodología ágil SCRUM.</p>
+                <h4><i class='bx bx-briefcase'></i> Metodologías y Entornos de Desarrollo</h4>
+                <p>Implementación de marcos de trabajo ágiles (SCRUM) para el ciclo de vida del desarrollo de software. Despliegue de entornos locales (XAMPP) y control de versiones colaborativo y centralizado utilizando Git y GitHub.</p>
               </div>
             </div>
             <div class="timeline-tags">
@@ -291,6 +299,73 @@
               <span class="tl-tag">REST API</span>
               <span class="tl-tag">SOAP</span>
             </div>
+          </div>
+        </article>
+
+        <article class="timeline-item" id="job-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Desarrolladora Web y Soporte Técnico</h3>
+                <p class="timeline-company">Proyectos Independientes / Freelance</p>
+              </div>
+              <span class="timeline-period">2021 – 2023</span>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-area">
+                <h4><i class='bx bx-laptop'></i> Desarrollo de Soluciones a Medida</h4>
+                <p>Diseño y programación de páginas web responsivas y aplicaciones a medida para negocios locales. Levantamiento de requerimientos y despliegue de soluciones tecnológicas orientadas al cliente.</p>
+              </div>
+              <div class="timeline-area">
+                <h4><i class='bx bx-wrench'></i> Mantenimiento y Soporte TI</h4>
+                <p>Diagnóstico de fallas en hardware y software, instalación de sistemas operativos, configuración de redes y respaldos de información para garantizar la continuidad operativa de diversos clientes.</p>
+              </div>
+            </div>
+            <div class="timeline-tags">
+              <span class="tl-tag">HTML/CSS</span>
+              <span class="tl-tag">JavaScript</span>
+              <span class="tl-tag">Soporte TI</span>
+              <span class="tl-tag">Hardware</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portafolio</span>
+        <h2 class="section-title" id="projects-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">Algunos de los trabajos más recientes en los que he participado.</p>
+      </div>
+      <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        
+        <article class="project-card glass-panel" style="padding: 24px;">
+          <h3 style="margin-bottom: 12px; color: var(--primary);">Proyecto RFID's</h3>
+          <p style="color: var(--text-muted); margin-bottom: 16px;">Implementación y validación del sistema RFID's, optimizando los procesos y asegurando la calidad del software.</p>
+          <div class="service-tags">
+            <span>QA</span><span>Desarrollo Web</span><span>Integración</span>
+          </div>
+        </article>
+
+        <article class="project-card glass-panel" style="padding: 24px;">
+          <h3 style="margin-bottom: 12px; color: var(--primary);">Plataforma "Desde 0"</h3>
+          <p style="color: var(--text-muted); margin-bottom: 16px;">Desarrollo integral de un sistema web construido completamente desde cero, aplicando buenas prácticas de arquitectura y escalabilidad.</p>
+          <div class="service-tags">
+            <span>JavaScript</span><span>Backend</span><span>Arquitectura Web</span>
+          </div>
+        </article>
+
+        <article class="project-card glass-panel" style="padding: 24px;">
+          <h3 style="margin-bottom: 12px; color: var(--primary);">App de Monitoreo</h3>
+          <p style="color: var(--text-muted); margin-bottom: 16px;">Dashboard en tiempo real para la visualización del estado de la red, uso de recursos y generación de alertas preventivas.</p>
+          <div class="service-tags">
+            <span>Redes</span><span>Infraestructura</span><span>Monitoreo</span>
           </div>
         </article>
 
@@ -309,7 +384,7 @@
       <div class="skills-categories" id="skills-categories">
 
         <!-- 1. Lenguajes de Programación -->
-        <div class="skill-category" id="cat-langs">
+        <div class="skill-category glass-panel" id="cat-langs">
           <div class="skill-cat-icon"><i class='bx bx-code-alt'></i></div>
           <h3 class="skill-cat-title">Lenguajes de Programación</h3>
           <div class="skills-grid">
@@ -326,7 +401,7 @@
         </div>
 
         <!-- 2. Frameworks y Librerías -->
-        <div class="skill-category" id="cat-frameworks">
+        <div class="skill-category glass-panel" id="cat-frameworks">
           <div class="skill-cat-icon"><i class='bx bx-cog'></i></div>
           <h3 class="skill-cat-title">Frameworks y Librerías</h3>
           <div class="skills-grid">
@@ -341,7 +416,7 @@
         </div>
 
         <!-- 3. Bases de Datos -->
-        <div class="skill-category" id="cat-databases">
+        <div class="skill-category glass-panel" id="cat-databases">
           <div class="skill-cat-icon"><i class='bx bx-data'></i></div>
           <h3 class="skill-cat-title">Bases de Datos</h3>
           <div class="skills-grid">
@@ -355,7 +430,7 @@
         </div>
 
         <!-- 4. Pruebas de Software (QA) y Automatización — EXPANDIDA -->
-        <div class="skill-category featured-cat" id="cat-qa">
+        <div class="skill-category featured-cat glass-panel" id="cat-qa">
           <div class="skill-cat-badge">⭐ Perfil Destacado</div>
           <div class="skill-cat-icon"><i class='bx bx-test-tube'></i></div>
           <h3 class="skill-cat-title">Pruebas de Software (QA) y Automatización</h3>
@@ -375,7 +450,7 @@
         </div>
 
         <!-- 5. Gestión de Pruebas y Defectos -->
-        <div class="skill-category" id="cat-management">
+        <div class="skill-category glass-panel" id="cat-management">
           <div class="skill-cat-icon"><i class='bx bx-list-check'></i></div>
           <h3 class="skill-cat-title">Gestión de Pruebas y Defectos</h3>
           <div class="skills-grid">
@@ -388,7 +463,7 @@
         </div>
 
         <!-- 6. Herramientas de Desarrollo y Control de Versiones -->
-        <div class="skill-category" id="cat-vcs">
+        <div class="skill-category glass-panel" id="cat-vcs">
           <div class="skill-cat-icon"><i class='bx bx-git-branch'></i></div>
           <h3 class="skill-cat-title">Control de Versiones y Herramientas</h3>
           <div class="skills-grid">
@@ -410,7 +485,7 @@
         </div>
 
         <!-- 7. IDEs y Servidores Locales -->
-        <div class="skill-category" id="cat-ides">
+        <div class="skill-category glass-panel" id="cat-ides">
           <div class="skill-cat-icon"><i class='bx bx-desktop'></i></div>
           <h3 class="skill-cat-title">Entornos de Desarrollo (IDEs)</h3>
           <div class="skills-grid">
@@ -430,7 +505,7 @@
         </div>
 
         <!-- 8. Redes y Administración -->
-        <div class="skill-category" id="cat-networks">
+        <div class="skill-category glass-panel" id="cat-networks">
           <div class="skill-cat-icon"><i class='bx bx-globe'></i></div>
           <h3 class="skill-cat-title">Redes y Administración</h3>
           <div class="skills-grid">
@@ -444,7 +519,7 @@
         </div>
 
         <!-- 9. DevOps y Contenedores -->
-        <div class="skill-category" id="cat-devops">
+        <div class="skill-category glass-panel" id="cat-devops">
           <div class="skill-cat-icon"><i class='bx bxl-docker'></i></div>
           <h3 class="skill-cat-title">DevOps y Contenedores</h3>
           <div class="skills-grid">
@@ -459,7 +534,7 @@
         </div>
 
         <!-- 10. Cloud Computing <i class='bx bxl-aws'></i> -->
-        <div class="skill-category cloud-cat" id="cat-cloud">
+        <div class="skill-category cloud-cat glass-panel" id="cat-cloud">
           <div class="skill-cat-icon"><i class='bx bxl-aws'></i></div>
           <h3 class="skill-cat-title">Cloud Computing</h3>
           <div class="skills-grid">
@@ -474,7 +549,7 @@
         </div>
 
         <!-- 11. Seguridad Informática -->
-        <div class="skill-category" id="cat-security">
+        <div class="skill-category glass-panel" id="cat-security">
           <div class="skill-cat-icon"><i class='bx bx-lock'></i></div>
           <h3 class="skill-cat-title">Seguridad Informática</h3>
           <div class="skills-grid">
@@ -486,7 +561,7 @@
         </div>
 
         <!-- 12. Modelado y Diseño -->
-        <div class="skill-category" id="cat-design">
+        <div class="skill-category glass-panel" id="cat-design">
           <div class="skill-cat-icon"><i class='bx bx-palette'></i></div>
           <h3 class="skill-cat-title">Modelado y Diseño</h3>
           <div class="skills-grid">
@@ -499,7 +574,7 @@
         </div>
 
         <!-- 13. Metodologías y Soft Skills Técnicas -->
-        <div class="skill-category" id="cat-methods">
+        <div class="skill-category glass-panel" id="cat-methods">
           <div class="skill-cat-icon"><i class='bx bx-folder-open'></i></div>
           <h3 class="skill-cat-title">Metodologías y Soft Skills</h3>
           <div class="skills-grid">
@@ -514,7 +589,7 @@
         </div>
 
         <!-- 14. Sistemas Operativos -->
-        <div class="skill-category" id="cat-os">
+        <div class="skill-category glass-panel" id="cat-os">
           <div class="skill-cat-icon"><i class='bx bx-desktop'></i></div>
           <h3 class="skill-cat-title">Sistemas Operativos</h3>
           <div class="skills-grid">
@@ -589,7 +664,7 @@
       <div class="certs-grid" id="certs-grid">
 
         <!-- Microsoft Office Word -->
-        <article class="cert-card-v2 office-cert" id="cert-office-word">
+        <article class="cert-card-v2 office-cert glass-panel" id="cert-office-word">
           <div class="cert-card-badge office-badge">Certificación</div>
           <div class="cert-card-icon">
             <img src="DOCUMENTOS/CERTIFICACIÓN OFFICE/WORD.jpeg" alt="Certificación Microsoft Word" class="cert-preview-img" />
@@ -607,7 +682,7 @@
         </article>
 
         <!-- Microsoft Office Excel -->
-        <article class="cert-card-v2 office-cert" id="cert-office-excel">
+        <article class="cert-card-v2 office-cert glass-panel" id="cert-office-excel">
           <div class="cert-card-badge office-badge">Certificación</div>
           <div class="cert-card-icon">
             <img src="DOCUMENTOS/CERTIFICACIÓN OFFICE/EXCEL.jpeg" alt="Certificación Microsoft Excel" class="cert-preview-img" />
@@ -625,7 +700,7 @@
         </article>
 
         <!-- Microsoft Office PowerPoint -->
-        <article class="cert-card-v2 office-cert" id="cert-office-ppt">
+        <article class="cert-card-v2 office-cert glass-panel" id="cert-office-ppt">
           <div class="cert-card-badge office-badge">Certificación</div>
           <div class="cert-card-icon">
             <img src="DOCUMENTOS/CERTIFICACIÓN OFFICE/POWER POINT.jpeg" alt="Certificación Microsoft PowerPoint" class="cert-preview-img" />
@@ -657,7 +732,7 @@
       <div class="certs-grid" id="courses-grid">
 
         <!-- Curso Domina la IA con Gemini -->
-        <article class="cert-card-v2 featured-cert" id="cert-gemini-ia">
+        <article class="cert-card-v2 featured-cert glass-panel" id="cert-gemini-ia">
           <div class="cert-card-badge">Curso</div>
           <div class="cert-card-icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5">
@@ -682,7 +757,7 @@
         </article>
 
         <!-- Curso CSS Desafío Latam -->
-        <article class="cert-card-v2 featured-cert" id="cert-css-desafio">
+        <article class="cert-card-v2 featured-cert glass-panel" id="cert-css-desafio">
           <div class="cert-card-badge">Curso</div>
           <div class="cert-card-icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5">
